@@ -1,0 +1,97 @@
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+.imgContainer{
+    position: relative;
+    height: 100vh;
+    background-image: url(../Assets/Homebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:scroll;
+    background-position:center ;
+
+    .homeBg{
+        height: 100vh;
+        background-color: #6b0f1a;
+        background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+        opacity: 0.3;
+    }
+
+    .bodyContainer{
+        position: absolute;
+        bottom:0;
+        margin: 0 0 5rem 3rem;
+        font-size: 2.5rem;
+        max-width: 600px;
+        color: rgb(84, 216, 216);
+        @media (max-width:'450px') {
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .highlight{
+            font-size: 8rem;
+            color: #fc3a44;
+            //color: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+            @media (max-width:'530px') {
+                font-size: 5rem;
+            }
+        }
+
+        .btn{
+            border-radius: 2rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            margin-left: 1rem;
+            border-color: white;
+            color: white;
+            font-size: 1.2rem;
+
+            &:hover{
+                background-color: white;
+                color:black;
+                border-color: black;
+            }
+            @media (max-width:'530px') {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.ser-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 227, 227);
+    margin:2rem 2rem 2rem 2rem ;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+
+    .ser-div{
+        
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: rgb(54, 21, 116);
+        margin-top:1rem;
+    }
+    .card{
+        width:250px;
+        height: 270px;
+        margin: 2rem;
+        border-radius: 1rem;
+        transition: margin-top 500ms linear;
+        display: flex;
+        justify-content: center;
+        &:hover{
+            margin-top: 0%;
+        }
+    }
+
+    
+}
+}
